@@ -12,7 +12,7 @@ basic.forever(function () {
         basic.showIcon(IconNames.Happy)
     } else if (available == 2) {
         basic.showIcon(IconNames.No)
-        basic.pause(50)
+        basic.pause(51)
         basic.showIcon(IconNames.Asleep)
     } else if (available == 3) {
         basic.showIcon(IconNames.No)
