@@ -23,5 +23,4 @@ basic.forever(function () {
         music.playMelody("C5 A B G A F G E ", 120)
         basic.showString("error")
     }
-    available = 0
 })
