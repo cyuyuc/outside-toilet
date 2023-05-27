@@ -1,20 +1,20 @@
 radio.onReceivedValue(function (name, value) {
-    available = value
+    availability = value
 })
-let available = 0
+let availability = 0
 basic.clearScreen()
 radio.setGroup(11)
 radio.setTransmitPower(7)
 basic.forever(function () {
-    if (available == 1) {
+    if (availability == 1) {
         basic.showIcon(IconNames.Yes)
         basic.pause(500)
         basic.showIcon(IconNames.Happy)
-    } else if (available == 2) {
+    } else if (availability == 2) {
         basic.showIcon(IconNames.No)
         basic.pause(51)
         basic.showIcon(IconNames.Asleep)
-    } else if (available == 3) {
+    } else if (availability == 3) {
         basic.showIcon(IconNames.No)
         basic.pause(100)
         basic.showIcon(IconNames.Sad)
