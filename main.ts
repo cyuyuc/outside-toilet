@@ -1,7 +1,11 @@
+radio.onReceivedNumber(function (receivedNumber) {
+    aqi = receivedNumber
+})
 radio.onReceivedValue(function (name, value) {
     availability = value
 })
 let availability = 0
+let aqi = 0
 music.stopAllSounds()
 basic.clearScreen()
 radio.setGroup(11)
@@ -20,5 +24,8 @@ basic.forever(function () {
         basic.showIcon(IconNames.Sad)
         music.playMelody("C5 A B G A F G E ", 120)
         basic.showString("error")
+    }
+    if (aqi == 999) {
+        music.playMelody("C C C5 C5 C C C5 C5 ", 400)
     }
 })
